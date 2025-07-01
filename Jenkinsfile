@@ -53,13 +53,13 @@ pipeline {
 
     post {
         success {
-            echo "✅ Build and push completed successfully!"
+            echo " Build and push completed successfully!"
         }
         failure {
-            echo "❌ Build or push failed. Check logs for details."
+            echo " Build or push failed. Check logs for details."
         }
         always {
-            echo "📝 Build finished: ${currentBuild.currentResult}"
+            echo " Build finished: ${currentBuild.currentResult}"
         }
     }
 }
