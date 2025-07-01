@@ -44,6 +44,8 @@ pipeline {
             steps {
                 script {
                     echo "Pushing images to registry"
+                    echo "IMAGE_TAG_COMMIT: ${IMAGE_TAG_COMMIT}"
+                    echo "IMAGE_TAG_LATEST: ${IMAGE_TAG_LATEST}"
                     sh "docker push ${IMAGE_TAG_COMMIT}"
                     sh "docker push ${IMAGE_TAG_LATEST}"
                 }
