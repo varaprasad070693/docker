@@ -1,5 +1,5 @@
 pipeline {
-    agent docker
+    agent { label'docker' }
 
     environment {
         DOCKER_REPO_CREDENTIALS = 'docker_credentials'
