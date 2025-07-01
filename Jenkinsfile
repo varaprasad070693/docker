@@ -2,7 +2,7 @@ pipeline {
     agent { label'docker' }
 
     environment {
-        DOCKER_REPO_CREDENTIALS = 'docker_credentials'
+        DOCKER_REPO_CREDENTIALS = '7aaafea6-7662-43fd-975a-fae773d06447'
         DOCKER_IMAGE = 'varaprasadmp/vp'          
         GIT_REPO = 'https://github.com/varaprasad070693/docker'
         BRANCH = 'main'
